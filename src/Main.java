@@ -30,5 +30,14 @@ public class Main {
         System.out.println("Desapilando elemento: " + pilaNumeros.desapilar());
         System.out.println("La pila esta vacia nuevamente?: " + pilaNumeros.estaVacia());
         System.out.println("Intentar desapilar una pila vacia: " + pilaNumeros.desapilar());
+
+        //Ejercicio 3 Clase Par:
+        Par<String, Integer> par = new Par<>("Edad", 25);
+
+        System.out.println("Par original: " + par);
+
+        Par<Integer, String> invertido = par.invertir();
+
+        System.out.println("Par invertido: " + invertido);
     }
 }
