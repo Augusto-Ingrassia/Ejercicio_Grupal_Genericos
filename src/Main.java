@@ -31,6 +31,32 @@ public class Main {
         System.out.println("La pila esta vacia nuevamente?: " + pilaNumeros.estaVacia());
         System.out.println("Intentar desapilar una pila vacia: " + pilaNumeros.desapilar());
 
+        //Ejercicio 2 Clase Mochila:
+        Mochila<String> mochilaItems = new Mochila<>();
+        
+        System.out.println("La mochila de items se encuentra vacia?: " + mochilaItems.estaVacia());
+        
+        mochilaItems.guardar("Champiñón Rojo");
+        mochilaItems.guardar("Flor de Fuego");
+        
+        System.out.println("La mochila de items sigue vacia?: " + mochilaItems.estaVacia());
+        System.out.println("Tamaño de la mochila de items: " + mochilaItems.tamanio());
+        System.out.println("Elemento en la posicion 0 de la mochila: " + mochilaItems.obtener(0));
+        System.out.println("Elemento en la posicion 1 de la mochila: " + mochilaItems.obtener(1));
+
+        Mochila<Integer> mochilaPuntajes = new Mochila<>();
+        mochilaPuntajes.guardar(100);
+        mochilaPuntajes.guardar(500);
+        System.out.println("Tamaño de la mochila de puntajes: " + mochilaPuntajes.tamanio());
+        System.out.println("Puntaje en la posicion 1: " + mochilaPuntajes.obtener(1));
+
+        // Versión específica de monedas
+        MochilaDeMonedas mochilaMonedas = new MochilaDeMonedas();
+        mochilaMonedas.guardarMonedas(10);
+        mochilaMonedas.guardarMonedas(50);
+        System.out.println("Tamaño de la mochila especifica de monedas: " + mochilaMonedas.tamanio());
+        System.out.println("Monedas en la posicion 0: " + mochilaMonedas.obtenerMonedas(0));
+
         //Ejercicio 3 Clase Par:
         Par<String, Integer> par = new Par<>("Edad", 25);
 
